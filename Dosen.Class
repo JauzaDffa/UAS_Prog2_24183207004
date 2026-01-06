@@ -1,0 +1,23 @@
+public class Dosen extends User{
+    private String matakuliah;
+    
+    public Dosen(){ //construktor non parameter
+        super();
+        this.matakuliah="";
+    }
+    public Dosen(String nidn, String nama, String matakuliah){ //construktor dengan parameter
+        super(nidn,nama);
+        this.matakuliah = matakuliah;
+    }
+    //=============== getter dan setter
+    public String getMataKuliah(){
+        return matakuliah;
+    }
+    public void setMataKuliah(String matakuliah){
+        this.matakuliah = matakuliah;
+    }
+    @Override
+    public void tampilInfo(){
+        System.out.println("Dosen - nidn: " + getnpm() + ", Nama: " + getNama() + ", Mata Kuliah: " + matakuliah);
+    }
+}
