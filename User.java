@@ -11,10 +11,10 @@ public abstract class User { //Abstrak Class dan  Inheritance pada Mahasiswa.jav
         this.nama=nama;
     }
      //=========================== // getter dan setter (Encapsulation)
-    public String getid(){
+    public String getId(){
         return id;
     }
-    public void Setid(String id){ 
+    public void SetId(String id){ 
         this.id = id;
     }
     public String getNama(){
@@ -26,3 +26,4 @@ public abstract class User { //Abstrak Class dan  Inheritance pada Mahasiswa.jav
     //============================
     public abstract void tampilInfo(); //Method abstract
 }
+
