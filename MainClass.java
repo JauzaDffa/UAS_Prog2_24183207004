@@ -2,11 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainClass {
-    public static void main(String[] args) { // Perbaikan 5.2: Parameter main standar
+    public static void main(String[] args) { 
         Scanner scanner = new Scanner(System.in);
         
-        // Perbaikan 5.7: Polymorphism menggunakan List dari Parent (User)
-        ArrayList<User> users = new ArrayList<>(); 
+        ArrayList<User> users = new ArrayList<>();  // Polymorphism 
         ArrayList<matakuliah> matakuliahs = new ArrayList<>();
         ArrayList<nilai> nilais = new ArrayList<>();
         
@@ -84,4 +83,5 @@ public class MainClass {
         } while (pilihan != 6);
         scanner.close();
     }
+
 }
