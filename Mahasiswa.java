@@ -12,8 +12,8 @@ public class Mahasiswa extends User {
         this.prodi = prodi;
         totalMahasiswa++;
     }
-    public Mahasiswa(String npm, String nama, String prodi, int angkatan){ //construktor overloading
-        super(npm, nama);
+    public Mahasiswa(String id, String nama, String prodi, int angkatan){ //construktor overloading
+        super(id, nama);
         this.prodi = prodi;
         totalMahasiswa++;
     }
@@ -27,7 +27,7 @@ public class Mahasiswa extends User {
     //====================
     @Override
     public void tampilInfo(){
-         System.out.println("NPM : " + getnpm() + ", NAMA MAHASISWA : " + getNama() + ", PRODI : " + prodi);
+         System.out.println("NPM : " + getid() + ", NAMA MAHASISWA : " + getNama() + ", PRODI : " + prodi);
     }
     
 }

@@ -1,21 +1,21 @@
-public abstract class User { //Abstrak Class
-    private String npm;
+public abstract class User { //Abstrak Class dan  Inheritance pada Mahasiswa.java dan Dosen.java
+    private String id;
     private String nama;
     
     public User(){ // construktor non parameter
-        this.npm = "";
+        this.id = "";
         this.nama = "";
     }
-    public User (String npm,String nama){ //construktor dengan parameter
-        this.npm=npm;
+    public User (String id,String nama){ //construktor dengan parameter
+        this.id=id;
         this.nama=nama;
     }
-    public String getnpm(){
-        return npm;
+     //=========================== // getter dan setter (Encapsulation)
+    public String getid(){
+        return id;
     }
-    //===========================
-    public void Setnpm(String npm){ // getter dan setter (Encapsulation)
-        this.npm = npm;
+    public void Setid(String id){ 
+        this.id = id;
     }
     public String getNama(){
         return nama;
