@@ -27,7 +27,8 @@ public class Mahasiswa extends User {
     //====================
     @Override
     public void tampilInfo(){
-         System.out.println("NPM : " + getid() + ", NAMA MAHASISWA : " + getNama() + ", PRODI : " + prodi);
+         System.out.println("NPM : " + getId() + ", NAMA MAHASISWA : " + getNama() + ", PRODI : " + prodi);
     }
     
+
 }
