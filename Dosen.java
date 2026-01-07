@@ -18,6 +18,7 @@ public class Dosen extends User{
     }
     @Override
     public void tampilInfo(){
-        System.out.println("NIDN : " + getid() + ", Nama Dosen: " + getNama() + ", Mata Kuliah: " + matakuliah);
+        System.out.println("NIDN : " + getId() + ", Nama Dosen: " + getNama() + ", Mata Kuliah: " + matakuliah);
     }
+
 }
